@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1.1"
+   viewBox="0 0 16 16"
+   id="svg11281"
+   sodipodi:docname="more-results.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs11285" />
+  <sodipodi:namedview
+     id="namedview11283"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="36.322974"
+     inkscape:cx="7.9151007"
+     inkscape:cy="8.0114585"
+     inkscape:window-width="1366"
+     inkscape:window-height="692"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg11281">
+    <inkscape:grid
+       type="xygrid"
+       id="grid11767" />
+  </sodipodi:namedview>
+  <g
+     transform="translate(0 -1036.4)"
+     id="g11279">
+    <circle
+       cx="8"
+       cy="1044.4"
+       r="8"
+       fill="#0078d4"
+       id="circle11275"
+       style="fill:#0f56d9;fill-opacity:1" />
+    <path
+       transform="translate(0,1036.4)"
+       d="M 7,4 V 7 H 4 C 4,7 3,7 3,8 3,9 4,9 4,9 h 3 v 3 c 0,0 0,1 1,1 1,0 1,-1 1,-1 V 9 h 3 C 12,9 13,9 13,8 13,7 12,7 12,7 H 9 V 4 C 9,4 9,3 8,3 7,3 7,4 7,4 Z"
+       fill="#ffffff"
+       id="path11277"
+       sodipodi:nodetypes="ccczccczccczccczc" />
+  </g>
+</svg>

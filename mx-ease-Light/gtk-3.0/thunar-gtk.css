@@ -1,0 +1,21 @@
+/*.thunar .sidebar .view { color: #ffffff; background-color: #dedfe3; border-color: #424242 }*/
+
+.thunar .sidebar .view:selected { color: #ffffff; background-color: #0f56d9; }
+.thunar .sidebar .view:hover { color: #1d2324; background-color: #c3d5f6; }
+
+.thunar .standard-view .view:selected { color: #ffffff; background-color: #0f56d9; }
+
+.thunar .standard-view .view:hover { color: #1d2324; background-color: #c3d5f6; }
+
+.thunar menubar > menuitem:hover { color: #ffffff; background-color: #0f56d9; }
+
+.thunar menuitem:hover { color: #1d2324; background-color: #c3d5f6; }
+
+.thunar radio:not(list):checked {-gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png")) }
+.thunar radio:not(list) {-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png")) }
+
+.thunar check:not(list):checked {-gtk-icon-source: -gtk-scaled(url("assets/selectionmode-checkbox-checked.png")) }
+.thunar check:not(list) {-gtk-icon-source: -gtk-scaled(url("assets/selectionmode-checkbox-unchecked.png")) }
+
+/*.thunar scrolledwindow { border-color: #ff0000; border-width: 10px }
+*/
