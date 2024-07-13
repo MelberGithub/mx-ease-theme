@@ -538,7 +538,7 @@ button:checked:disabled {
   background-color: rgba(26, 115, 232, 0.35);
   border-color: rgba(26, 115, 232, 0.35);
   background-clip: padding-box;
-  color: #ff0000;
+  color: #424242;
 }
 
 button:drop(active) {

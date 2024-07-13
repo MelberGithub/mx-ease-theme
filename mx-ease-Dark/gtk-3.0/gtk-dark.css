@@ -1499,6 +1499,13 @@ searchbar > revealer > box {
 /***************
  * Header bars *
  ***************/
+ 
+  /*HERE JULY*/
+ toolbar button:not(.text-button):not(.suggested-action):not(.destructive-action) {
+ margin: 0px;
+ }
+ /* to here july*/
+ 
 .nemo-window.background .primary-toolbar button:not(.text-button):not(.suggested-action):not(.destructive-action), .thunar toolbar button, .xfce4-panel.background button, .titlebar button:not(.suggested-action):not(.destructive-action) {
   color: #ffffff;
 }
