@@ -34,3 +34,17 @@ widget_class "*Chrom*<GtkEntry>" style "chrome_entry"
 
 # Hack to be able to match widgets in LibreOffice
 class "GtkWindow" style "toplevel_hack"
+
+
+### mx gimp hacks ###
+style "gimp-default-style-fix" {
+  fg[ACTIVE]        = @text_color
+
+}
+class "Gimp*" style "gimp-default-style-fix"
+
+style "gimp-default-button-fix" {
+  fg[ACTIVE]        = @text_color
+
+}
+widget_class "Gimp*<GtkButton>*" style "gimp-default-button-fix"

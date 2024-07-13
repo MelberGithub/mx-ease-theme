@@ -82,11 +82,11 @@ style "default" {
   # ( every window is misaligned for the sake of menus ):
   GtkMenuBar::internal-padding = 0
   GtkMenu::horizontal-padding  = 0
-  GtkMenu::vertical-padding    = 4
+  GtkMenu::vertical-padding    = 0
   GtkMenu::double-arrows       = 0
   GtkMenuItem::arrow-scaling   = 1
 ###here###
-  GtkMenuItem::toggle-spacing  = 24
+  GtkMenuItem::toggle-spacing  = 12
 
   GtkCheckButton::indicator-size    = 24
   GtkCheckButton::indicator_spacing = 2
@@ -118,9 +118,9 @@ style "default" {
 
   fg[NORMAL]        = @fg_color
   fg[PRELIGHT]      = @fg_color
-  fg[SELECTED]      = @selected_fg_color
+  fg[SELECTED]      = @fg_color
   fg[INSENSITIVE]   = @fg_color
-  fg[ACTIVE]        = @selected_fg_color
+  fg[ACTIVE]        = @fg_color
 
   text[NORMAL]      = @text_color
   text[PRELIGHT]    = @text_color
@@ -138,6 +138,7 @@ style "default" {
 
   # Draw frame around menu in a non-compositied environment
   # This needs to go before pixmap because we need to override some stuff
+  
   engine "adwaita" {}
 
   engine "pixmap" {
@@ -1671,13 +1672,13 @@ style "default" {
       detail   = "cell_even_sorted"
       state    = NORMAL
     }
-
+    
     image {
       function = FLAT_BOX
       detail   = "cell_odd_sorted"
       state    = NORMAL
     }
-
+    
     # Disable all the other shadows
     # This prevents the Raleigh effect
     image {
@@ -1685,6 +1686,7 @@ style "default" {
     }
   }
 }
+
 
 style "menubar" {
   bg[NORMAL]      = @bg_color
@@ -1701,7 +1703,7 @@ style "menubar" {
 
 style "menubar_item" {
   xthickness = 3
-  ythickness = 4
+  ythickness = 0
 
   fg[NORMAL]      = @text_color
     bg[NORMAL]      = @titlebar_bg_color
@@ -1957,21 +1959,27 @@ style "separator_menu_item" {
 }
 
 style "button_label" {
-    fg[ACTIVE] = @selected_fg_color
-    #fg[PRELIGHT] = @selected_fg_color
+    fg[NORMAL] = @fg_color
+    #fg[ACTIVE] = @selected_fg_color
+    #fg[PRELIGHT] = @test_color
 }
 
 style "normal_button_label" {
-    fg[ACTIVE] = @selected_fg_color
+    fg[NORMAL] = @selected_fg_color
+    #fg[ACTIVE] = @selected_fg_color
     #fg[PRELIGHT] = @selected_bg_color
 }
 
 style "button" {
   xthickness = 4
   ythickness = 4
-  
+    
+    #fg[NORMAL] = @selected_fg_color ###this works  
     #fg[PRELIGHT] = @selected_bg_color ###this works
-    fg[ACTIVE] = @selected_fg_color ###this doesn't work
+    #fg[ACTIVE] = @selected_fg_color ###this doesn't work
+        #fg[ACTIVE] = "#ff0000" ###this doesn't work
+    #fg[SELECTED] = @selected_fg_color ###this doesn't work
+        #fg[SELECTED] = "#ff0000" ###this doesn't work
 
   # For the sake of sanity style buttons this way
   engine "pixmap" {
@@ -2010,6 +2018,7 @@ style "button" {
     image {
       function = BOX
       state    = ACTIVE
+      shadow   = IN   ###here june
       file     = "assets/button-active.png"
       border   = {8, 8, 8, 8}
       stretch  = TRUE
@@ -2049,7 +2058,9 @@ style "entry" {
 style "combobox" {
   xthickness = 6
   ythickness = 6
-
+  ## HERE JUNE ##
+  fg[PRELIGHT]      = @bg_color
+  
   # This affects only the button beside an entry
   GtkButton::inner-border = {0, 0, 0, 0}
 
@@ -2278,7 +2289,7 @@ style "notebook" {
 
 ## HERE
 style "notebook_tab_label" {
-  fg[ACTIVE] = mix(0.7, @fg_color, @bg_color)
+  fg[ACTIVE] = @fg_color
   bg[NORMAL]      = @base_color
   bg[ACTIVE]      = @base_color
   bg[PRELIGHT]    = @base_color
@@ -2391,8 +2402,8 @@ style "treeview_header" {
   xthickness = 2
   ythickness = 2
 
-  fg[NORMAL]   = @selected_bg_color
-  fg[PRELIGHT] = @prelight_color
+  fg[NORMAL]   = @text_color
+  fg[PRELIGHT] = @text_color
 
   font_name = "Medium"
 
@@ -2659,7 +2670,7 @@ class "GtkWidget" style "default"
 ######################################
 
 class "GtkButton"                                                  style "button"
-  class "<GtkLabel>"                             style "button_label"
+#widget_class "*<GtkButton>*"                             style "button_label"
 class "GtkLinkButton"                                              style "link_button"
 class "GtkEntry"                                                   style "entry"
 class "GtkOldEditable"                                             style "entry"
@@ -2731,7 +2742,9 @@ widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkProgressBar>"       style "normal
 widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkSpinButton>"        style "normal_bg"
 
 # Button labels
-widget_class "*<GtkButton>.<GtkLabel>*"                             style "button_label"
+widget_class "*<GtkButton>.<GtkLabel>" style "button_label"
+ # widget_class "*<GtkNotebook>.<GtkButton>" style "button_label"
+ # widget_class "*<GtkNotebook>*<GtkLabel>*" style "button_label"
 
 # Normalize button labels
 widget_class "*<GtkCheckButton>.<GtkLabel>"                        style "normal_button_label"

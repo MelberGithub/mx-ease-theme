@@ -19,7 +19,7 @@ gtk-color-scheme = "fg_color:#ffffff"
 gtk-color-scheme = "bg_color:#424242"
 # Selected foreground/background
 gtk-color-scheme = "selected_fg_color:#ffffff"
-gtk-color-scheme = "selected_bg_color:#0f56d9"
+gtk-color-scheme = "selected_bg_color:#2e63ba"
 # Titlebar foreground/background
 gtk-color-scheme = "titlebar_fg_color:#ffffff"
 gtk-color-scheme = "titlebar_bg_color:#1d2324"
@@ -33,7 +33,7 @@ gtk-color-scheme = "tooltip_bg_color:#424242"
 gtk-color-scheme = "link_color:#1A73E8"
 gtk-color-scheme = "visited_link_color:#9C27B0"
 # Made-up
-gtk-color-scheme = "prelight_color:#c3d5f6"
+gtk-color-scheme = "prelight_color:#A3B5D9"
 gtk-color-scheme = "sidebar_color:#d9d9d9"
 gtk-color-scheme = "test_color:#ff00ff"
 

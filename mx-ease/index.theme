@@ -7,6 +7,6 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=mx-ease
 MetacityTheme=mx-ease
-IconTheme=mx-ease
-CursorTheme=mx-ease
+IconTheme=Papirus
+CursorTheme=DMZ-Black
 ButtonLayout=close,minimize,maximize:menu

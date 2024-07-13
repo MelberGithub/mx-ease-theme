@@ -86,7 +86,7 @@ style "default" {
   GtkMenu::double-arrows       = 0
   GtkMenuItem::arrow-scaling   = 1
 ###here###
-  GtkMenuItem::toggle-spacing  = 24
+  GtkMenuItem::toggle-spacing  = 12
 
   GtkCheckButton::indicator-size    = 24
   GtkCheckButton::indicator_spacing = 2
@@ -117,7 +117,7 @@ style "default" {
   bg[ACTIVE]        = @selected_bg_color
 
   fg[NORMAL]        = @fg_color
-  fg[PRELIGHT]      = @fg_color
+  fg[PRELIGHT]      = @bg_color
   fg[SELECTED]      = @selected_fg_color
   fg[INSENSITIVE]   = @fg_color
   fg[ACTIVE]        = @fg_color
@@ -129,7 +129,7 @@ style "default" {
   text[ACTIVE]      = @selected_fg_color
 
   base[NORMAL]      = @base_color
-  base[PRELIGHT]    = @prelight_color
+  base[PRELIGHT]    = @bg_color
   base[SELECTED]    = @selected_bg_color
   base[INSENSITIVE] = @base_color
   base[ACTIVE]      = @selected_bg_color
@@ -322,7 +322,7 @@ style "default" {
       function        = OPTION
       state           = PRELIGHT
       shadow          = IN
-      overlay_file    = "assets/radio-checked-hover.png"
+      overlay_file    = "assets/radio-checked-hover2.png"
       overlay_stretch = FALSE
     }
 
@@ -545,7 +545,7 @@ style "default" {
     image {
       function        = ARROW
       state           = PRELIGHT
-      overlay_file    = "assets/pan-down.png"
+      overlay_file    = "assets/pan-down-hover.png"
       overlay_stretch = FALSE
       arrow_direction = DOWN
     }
@@ -1701,7 +1701,7 @@ style "menubar" {
 
 style "menubar_item" {
   xthickness = 3
-  ythickness = 4
+  ythickness = 0
 
   fg[NORMAL]      = @text_color
     bg[NORMAL]      = @titlebar_bg_color
@@ -1857,7 +1857,7 @@ style "menu_item" {
       function        = OPTION
       state           = PRELIGHT
       shadow          = OUT
-      overlay_file    = "assets/menu-radio-unchecked.png"
+      overlay_file    = "assets/menu-radio-unchecked-hover.png"
       overlay_stretch = TRUE
     }
 
@@ -1958,7 +1958,7 @@ style "separator_menu_item" {
 
 style "button_label" {
   fg[NORMAL] = @fg_color
-    fg[ACTIVE] = @fg_color
+    fg[ACTIVE] = @bg_color
       fg[PRELIGHT] = @fg_color
   fg[INSENSITIVE] = @test_color
 
@@ -1977,7 +1977,9 @@ style "normal_button_label" {
 style "button" {
   xthickness = 4
   ythickness = 4
-
+  ## HERE JUNE ##
+      #fg[PRELIGHT] = @test_color
+      text[ACTIVE] = @test_color
   # For the sake of sanity style buttons this way
   engine "pixmap" {
 
@@ -1997,7 +1999,7 @@ style "button" {
       function = BOX
       state    = PRELIGHT
       shadow   = OUT
-      file     = "assets/button-hover.png"
+      file     = "assets/button-hover2.png"
       border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
@@ -2054,6 +2056,8 @@ style "entry" {
 style "combobox" {
   xthickness = 6
   ythickness = 6
+  ## HERE JUNE ##
+  fg[PRELIGHT]      = @bg_color
 
   # This affects only the button beside an entry
   GtkButton::inner-border = {0, 0, 0, 0}
@@ -2076,7 +2080,7 @@ style "combobox" {
     image {
       function = BOX
       state    = PRELIGHT
-      file     = "assets/entry-hover.png"
+      file     = "assets/entry-hover2.png"
       border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
@@ -2102,6 +2106,7 @@ style "combobox" {
 style "combobox_cellview" {
   # text[NORMAL] = mix(0.7, @fg_color, @bg_color)
   # text[INSENSITIVE] = mix(0.3, @fg_color, @bg_color)
+
 }
 
 style "combobox_entry" {
@@ -2283,7 +2288,7 @@ style "notebook" {
 
 ## HERE
 style "notebook_tab_label" {
-  fg[ACTIVE] = mix(0.7, @fg_color, @bg_color)
+  fg[ACTIVE] = @fg_color
   bg[NORMAL]      = @base_color
   bg[ACTIVE]      = @base_color
   bg[PRELIGHT]    = @base_color
@@ -2293,6 +2298,11 @@ style "notebook_tab_label" {
 
 style "notebook_viewport" {
   bg[NORMAL] = @test_color
+}
+
+## HERE JUNE ##
+style "notebook_button" {
+  fg[PRELIGHT] = @fg_color
 }
 
 style "notebook_bg" {
@@ -2306,6 +2316,8 @@ style "notebook_entry" {
   base[NORMAL]      = @base_color
   base[INSENSITIVE] = @base_color
   base[ACTIVE]      = @selected_bg_color
+      ## HERE JUNE ##
+      fg[PRELIGHT] = @test_color
 }
 
 style "normal_bg" {
@@ -2396,8 +2408,8 @@ style "treeview_header" {
   xthickness = 2
   ythickness = 2
 
-  fg[NORMAL]   = @selected_bg_color
-  fg[PRELIGHT] = @prelight_color
+  fg[NORMAL]   = @text_color
+  fg[PRELIGHT] = @bg_color
 
   font_name = "Medium"
 
@@ -2546,7 +2558,11 @@ style "frame" {
 
 style "tool_button" {
   GtkButton::inner-border = {2, 2, 2, 2}
-
+# HERE JULY
+  fg[NORMAL]   = @text_color
+    fg[PRELIGHT] = @bg_color
+# to here
+  
   # For the sake of sanity style buttons this way
   engine "pixmap" {
     image {
@@ -2561,7 +2577,7 @@ style "tool_button" {
       function = BOX
       state    = PRELIGHT
       shadow   = OUT
-      file     = "assets/flat-button-hover.png"
+      file     = "assets/flat-button-hover2.png"
       border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
@@ -2717,6 +2733,8 @@ widget_class "*<GtkToolButton>*<GtkButton>"                        style "tool_b
 widget_class "*<GtkVBox>*<GtkEventBox>.<GtkToolbar>*<GtkButton>"   style "tool_button"
 
 # Notebooks
+
+widget_class "*<GtkNotebook>*<GtkLabel>*"                           style "notebook_button"
 widget_class "*<GtkNotebook>.<GtkLabel>"                           style "notebook_tab_label"
 widget_class "*<GtkNotebook>.<GtkHBox>.<GtkLabel>"                 style "notebook_tab_label"
 
