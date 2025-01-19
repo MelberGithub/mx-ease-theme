@@ -21,23 +21,43 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="6.4384543"
-     inkscape:cx="24.074101"
-     inkscape:cy="24.61771"
-     inkscape:window-width="1366"
-     inkscape:window-height="698"
-     inkscape:window-x="0"
+     showgrid="true"
+     inkscape:zoom="9.1157323"
+     inkscape:cx="26.547511"
+     inkscape:cy="23.037096"
+     inkscape:window-width="1329"
+     inkscape:window-height="733"
+     inkscape:window-x="37"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
+     inkscape:current-layer="checkbox-checked">
+    <inkscape:grid
+       type="xygrid"
+       id="grid286" />
+  </sodipodi:namedview>
   <g
      id="checkbox-checked"
      transform="matrix(2,0,0,2,-568,-296)"
      style="display:inline;stroke-width:0.5">
+    <rect
+       style="display:none;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0;paint-order:markers fill stroke"
+       id="rect288"
+       width="40"
+       height="40"
+       x="4.0000005"
+       y="4.0000005"
+       transform="matrix(0.5,0,0,0.5,284,148)" />
+    <rect
+       style="display:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0;paint-order:markers fill stroke"
+       id="rect1173"
+       width="14"
+       height="10.999999"
+       x="289"
+       y="154.5" />
     <path
-       d="m 296,150 c -5.52,0 -10,4.48 -10,10 0,5.52 4.48,10 10,10 5.52,0 10,-4.48 10,-10 0,-5.52 -4.48,-10 -10,-10 z m 5.5898,4.5801 L 303,156 l -9,9 -5,-5 1.4102,-1.4102 3.5898,3.5801 z"
+       d="m 286,150 v 20 h 20 v -20 z m 15.5,4.5 1.5,1.5 -9,9 -5,-5 1.5,-1.5 3.5,3.5 z"
        id="path3316"
-       style="fill:#000000;fill-opacity:1;stroke-width:0.5;stroke:none" />
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+       sodipodi:nodetypes="cccccccccccc" />
   </g>
 </svg>

@@ -21,8 +21,8 @@ style "default" {
   GtkToolbar::internal-padding = 2
   GtkToolButton::icon-spacing  = 4
 
-  GtkWidget::tooltip-radius    = 4
-  GtkWidget::tooltip-alpha     = 230
+  GtkWidget::tooltip-radius    = 0
+  GtkWidget::tooltip-alpha     = 255
   GtkWidget::new-tooltip-style = 1 #for compatibility
 
   GtkWidget::link-color              = @link_color
@@ -44,7 +44,7 @@ style "default" {
   GtkButton::inner-border           = {0, 0, 0, 0}
 
   GtkEntry::state-hint   = 1
-  GtkEntry::inner-border = {0, 0, 0, 0}
+  GtkEntry::inner-border = {4, 4, 4, 4}
 
   GtkPaned::handle-size  = 8
   GtkHPaned::handle-size = 8
@@ -78,6 +78,7 @@ style "default" {
   GtkMenuBar::shadow-type      = GTK_SHADOW_NONE
   GtkToolbar::shadow-type      = GTK_SHADOW_NONE
   GtkNotebook::shadow-type     = GTK_SHADOW_NONE
+
   # TODO: find out what this comment means:
   # ( every window is misaligned for the sake of menus ):
   GtkMenuBar::internal-padding = 0
@@ -88,7 +89,7 @@ style "default" {
 ###here###
   GtkMenuItem::toggle-spacing  = 12
 
-  GtkCheckButton::indicator-size    = 24
+  GtkCheckButton::indicator-size    = 22
   GtkCheckButton::indicator_spacing = 2
 ###here###
   #GtkOptionMenu::indicator_spacing  = {8, 8, 8, 8}
@@ -118,7 +119,7 @@ style "default" {
 
   fg[NORMAL]        = @fg_color
   fg[PRELIGHT]      = @fg_color
-  fg[SELECTED]      = @fg_color
+  fg[SELECTED]      = @selected_fg_color
   fg[INSENSITIVE]   = @fg_color
   fg[ACTIVE]        = @fg_color
 
@@ -192,7 +193,7 @@ style "default" {
       state           = NORMAL
       shadow          = IN
       overlay_file    = "assets/checkbox-checked.png"
-      overlay_stretch = TRUE
+      overlay_stretch = FALSE
     }
 
     image {
@@ -890,7 +891,7 @@ style "default" {
     image {
       function = EXTENSION
       state    = ACTIVE
-      file     = "assets/tab-1x12.png"
+      file     = "assets/tab-1x18.png"
       border   = {1, 1, 1, 1}
       stretch  = TRUE
       gap_side = RIGHT
@@ -906,7 +907,7 @@ style "default" {
     image {
       function = EXTENSION
       state    = ACTIVE
-      file     = "assets/tab-1x12.png"
+      file     = "assets/tab-1x18.png"
       border   = {1, 1, 1, 1}
       stretch  = TRUE
       gap_side = LEFT
@@ -919,19 +920,33 @@ style "default" {
 
     # Up
 
-    image {
-      function = EXTENSION
-      state    = ACTIVE
-      file     = "assets/tab-30x30grey.png"
-      border   = {0, 0, 0, 0}
-      stretch  = TRUE
-      gap_side = BOTTOM
-   }
+#    image {
+#      function = EXTENSION
+#      state    = ACTIVE
+#      file     = "assets/tab-30x30grey.png"
+#      border   = {0, 0, 0, 0}
+#      stretch  = TRUE
+#      gap_side = BOTTOM
+#   }
 
     image {
       function = EXTENSION
       state    = NORMAL
-      file     = "assets/tab-30x30.png"
+      file     = "assets/tab-30x30-hover.png"
+      border   = {1, 1, 1, 1}
+      stretch  = TRUE
+      gap_side = BOTTOM
+    }
+    
+        image {
+      function = EXTENSION
+      gap_side = BOTTOM
+    }
+    
+        image {
+      function = EXTENSION
+      state    = PRELIGHT
+      file     = "assets/tab-30x30-hover.png"
       border   = {1, 1, 1, 1}
       stretch  = TRUE
       gap_side = BOTTOM
@@ -2106,8 +2121,8 @@ style "combobox" {
 }
 
 style "combobox_cellview" {
-  # text[NORMAL] = mix(0.7, @fg_color, @bg_color)
-  # text[INSENSITIVE] = mix(0.3, @fg_color, @bg_color)
+  text[NORMAL] = @text_color
+  text[INSENSITIVE] = @text_color
 }
 
 style "combobox_entry" {
@@ -2285,15 +2300,14 @@ style "combo_button_padding" {
 style "notebook" {
   xthickness = 3
   ythickness = 3
+    fg[ACTIVE] = @selected_fg_color
 }
 
 ## HERE
 style "notebook_tab_label" {
-  fg[ACTIVE] = @fg_color
-  bg[NORMAL]      = @base_color
-  bg[ACTIVE]      = @base_color
-  bg[PRELIGHT]    = @base_color
-  bg[INSENSITIVE] = @base_color
+  fg[ACTIVE] = @selected_fg_color
+    fg[NORMAL] = @selected_fg_color
+    text[NORMAL] = @selected_fg_color
   font_name = "Medium"
 }
 
@@ -2552,6 +2566,9 @@ style "frame" {
 
 style "tool_button" {
   GtkButton::inner-border = {2, 2, 2, 2}
+  
+  fg[NORMAL]        = @test_color
+  fg[PRELIGHT]      = @selected_fg_color
 
   # For the sake of sanity style buttons this way
   engine "pixmap" {
@@ -2577,7 +2594,7 @@ style "tool_button" {
       function = BOX
       state    = PRELIGHT
       shadow   = IN
-      file     = "assets/flat-button-active.png"
+      file     = "assets/button-active.png"
       border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
@@ -2585,7 +2602,7 @@ style "tool_button" {
     image {
       function = BOX
       state    = ACTIVE
-      file     = "assets/flat-button-active.png"
+      file     = "assets/button-active.png"
       border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
@@ -2658,6 +2675,59 @@ style "disable_separator" {
   GtkWidget::wide-separators = 1
 }
 
+######################################
+style "pathbuttons" {
+
+  fg[NORMAL]   = @text_color
+  fg[SELECTED] = @selected_fg_color
+  
+  engine "pixmap" {
+
+    image {
+      function = BOX
+      state    = NORMAL
+      file     = "assets/flat-button.png"
+      border   = {1, 1, 1, 1}
+      stretch  = TRUE
+    }
+
+    image {
+      function = BOX
+      state    = PRELIGHT
+      shadow   = OUT
+      file     = "assets/flat-button-hover.png"
+      border   = {1, 1, 1, 1}
+      stretch  = TRUE
+    }
+
+    image {
+      function = BOX
+      state    = ACTIVE
+      shadow   = IN   ###here june
+      file     = "assets/flat-button-active.png"
+      border   = {1, 1, 1, 1}
+      stretch  = TRUE
+    }
+  }
+}
+
+style "filechooserhacks" {
+
+  bg[NORMAL]        = @bg_color
+  bg[PRELIGHT]      = @prelight_color
+  bg[SELECTED]      = @selected_bg_color
+  bg[INSENSITIVE]   = @bg_color
+  bg[ACTIVE]        = @selected_bg_color
+
+  fg[NORMAL]        = @fg_color
+  fg[PRELIGHT]      = @fg_color
+  fg[SELECTED]      = @selected_fg_color
+  fg[INSENSITIVE]   = @fg_color
+  fg[ACTIVE]        = @fg_color
+}
+
+######################################
+
 # Default style, containing theme properties and trying to match every widget as
 # much as possible, which is not only faster than trying to match every widget
 # by its own but also less bug-prune and more consistent. However there is some
@@ -2669,77 +2739,86 @@ class "GtkWidget" style "default"
 # Override padding, style and colour #
 ######################################
 
-class "GtkButton"                                                  style "button"
-#widget_class "*<GtkButton>*"                             style "button_label"
-class "GtkLinkButton"                                              style "link_button"
-class "GtkEntry"                                                   style "entry"
-class "GtkOldEditable"                                             style "entry"
-class "GtkNotebook"                                                style "notebook"
-class "GtkHScale"                                                  style "scale_horz"
-class "GtkVScale"                                                  style "scale_vert"
-class "GtkProgressBar"                                             style "progressbar"
-class "GtkScrolledWindow"                                          style "scrolled_window"
-class "GtkFrame"                                                   style "frame"
-class "GtkSeparatorToolItem"                                       style "toolbar_separator"
-class "GtkMenuBar"                                                 style "menubar"
-class "GtkMenu"                                                    style "menu"
-class "GtkTextView"                                                style "textview"
+class "GtkButton"    style "button"
+#widget_class "*<GtkButton>*"    style "button_label"
+class "GtkLinkButton"    style "link_button"
+class "GtkEntry"    style "entry"
+class "GtkOldEditable"    style "entry"
+class "GtkNotebook"      style "notebook"
+class "GtkHScale"    style "scale_horz"
+class "GtkVScale"    style "scale_vert"
+class "GtkProgressBar"    style "progressbar"
+class "GtkScrolledWindow"     style "scrolled_window"
+class "GtkFrame"    style "frame"
+class "GtkSeparatorToolItem"     style "toolbar_separator"
+class "GtkMenuBar"    style "menubar"
+class "GtkMenu"     style "menu"
+class "GtkTextView"      style "textview"
 
 # Menu and menubar items
-widget_class "*<GtkMenuItem>*"                                     style "menu_item"
-widget_class "*<GtkMenuBar>.<GtkMenuItem>*"                        style "menubar_item"
-widget_class "*<GtkSeparatorMenuItem>*"                            style "separator_menu_item"
+widget_class "*<GtkMenuItem>*"    style "menu_item"
+widget_class "*<GtkMenuBar>.<GtkMenuItem>*"    style "menubar_item"
+widget_class "*<GtkSeparatorMenuItem>*"    style "separator_menu_item"
 
 # Treeview buttons
-widget_class "*<GtkTreeView>*<GtkButton>*"                         style "treeview_header"
+widget_class "*<GtkTreeView>*<GtkButton>*"     style "treeview_header"
 
 # Give the file chooser toolbar a border
-widget_class "*<GtkFileChooserDefault>*<GtkToolbar>"               style "inline_toolbar"
+widget_class "*<GtkFileChooserDefault>*<GtkToolbar>"     style "inline_toolbar"
 
 # Fix padding on regular comboboxes
-widget_class "*<GtkComboBox>.<GtkButton>"                          style "combobox"
-widget_class "*<GtkOptionMenu>"                                    style "combobox"
+widget_class "*<GtkComboBox>.<GtkButton>"      style "combobox"
+widget_class "*<GtkOptionMenu>"      style "combobox"
 
 # And disable separators on them
-widget_class "*<GtkComboBox>.<GtkButton>*<GtkSeparator>"           style "disable_separator"
-widget_class "*<GtkFontButton>*<GtkSeparator>"                     style "disable_separator"
-widget_class "*<GtkFileChooserButton>*<GtkSeparator>"              style "disable_separator"
+widget_class "*<GtkComboBox>.<GtkButton>*<GtkSeparator>"      style "disable_separator"
+widget_class "*<GtkFontButton>*<GtkSeparator>"    style "disable_separator"
+widget_class "*<GtkFileChooserButton>*<GtkSeparator>"    style "disable_separator"
 
 # Join together the ComboBoxEntry entry and button
-widget_class "*<GtkComboBoxEntry>*"                                style "combobox_entry"
+widget_class "*<GtkComboBoxEntry>*"    style "combobox_entry"
 
 # Join the Combo entry and button
-widget_class "*<GtkCombo>*"                                        style "combobox_entry"
+widget_class "*<GtkCombo>*"      style "combobox_entry"
 
 # Tweak the padding on the button a little bit because it
 # uses it a bit differently
-widget_class "*<GtkCombo>.<GtkButton>"                             style "combo_button_padding"
+widget_class "*<GtkCombo>.<GtkButton>"    style "combo_button_padding"
 
 # Alas we cannot do the same for ComboBoxText because there
 # isn't a way to apply the style to only the comboboxes that
 # have an entry inside
 
 # Tool buttons have different styles
-widget_class "*<GtkToolButton>*<GtkButton>"                        style "tool_button"
+widget_class "*<GtkToolButton>*<GtkButton>"    style "tool_button"
 widget_class "*<GtkVBox>*<GtkEventBox>.<GtkToolbar>*<GtkButton>"   style "tool_button"
+widget_class "*<GtkFileChooserDialog>*<GtkButton>"   style "tool_button"
+
+###################### 
+#widget_class "*<GtkFileChooserDialog>*<GtkTreeView>*"   style "filechooserhacks"
+###################### 
 
 # Notebooks
-widget_class "*<GtkNotebook>.<GtkLabel>"                           style "notebook_tab_label"
-widget_class "*<GtkNotebook>.<GtkHBox>.<GtkLabel>"                 style "notebook_tab_label"
+widget_class "*<GtkNotebook>.<GtkLabel>"    style "notebook_tab_label"
+widget_class "*<GtkNotebook>.<GtkHBox>.<GtkLabel>"    style "notebook_tab_label"
+widget_class "*.GtkNotebook.*"    style "notebook_tab_label"
+#here nov24
+widget_class "*<GtkNotebook>.<GtkWidget>.<GtkLabel>"    style "notebook_tab_label"
+
 
 # Notebooks are white, act accordingly
-widget_class "*<GtkNotebook>*<GtkEntry>"                           style "notebook_entry"
-widget_class "*<GtkNotebook>*<GtkProgressBar>"                     style "notebook_bg"
-widget_class "*<GtkNotebook>*<GtkSpinButton>"                      style "notebook_bg"
+widget_class "*<GtkNotebook>*<GtkEntry>"    style "notebook_entry"
+widget_class "*<GtkNotebook>*<GtkProgressBar>"    style "notebook_bg"
+widget_class "*<GtkNotebook>*<GtkSpinButton>"    style "notebook_bg"
 widget_class "*<GtkNotebook>*<GtkScrolledWindow>*<GtkViewport>"    style "notebook_bg"
-widget_class "*<GtkNotebook>*<GimpRuler>"                          style "notebook_bg"
+widget_class "*<GtkNotebook>*<GimpRuler>"      style "notebook_bg"
 widget_class "*<GtkNotebook>.<GimpDisplayShell>*<GtkEventBox>"     style "notebook_bg"
 
 # However, stuff inside eventboxes inside notebooks is grey
 # again, react
-widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkEntry>"             style "normal_entry"
-widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkProgressBar>"       style "normal_bg"
-widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkSpinButton>"        style "normal_bg"
+widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkEntry>"    style "normal_entry"
+widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkProgressBar>"    style "normal_bg"
+widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkSpinButton>"    style "normal_bg"
 
 # Button labels
 widget_class "*<GtkButton>.<GtkLabel>" style "button_label"
@@ -2747,16 +2826,16 @@ widget_class "*<GtkButton>.<GtkLabel>" style "button_label"
  # widget_class "*<GtkNotebook>*<GtkLabel>*" style "button_label"
 
 # Normalize button labels
-widget_class "*<GtkCheckButton>.<GtkLabel>"                        style "normal_button_label"
-widget_class "*<GtkOptionMenu>.<GtkLabel>"                         style "normal_button_label"
+widget_class "*<GtkCheckButton>.<GtkLabel>"    style "normal_button_label"
+widget_class "*<GtkOptionMenu>.<GtkLabel>"     style "normal_button_label"
 
 # ComboBoxes tend to draw the button label with text[]
 # instead of fg[], we need to fix that
-widget_class "*<GtkComboBox>*<GtkCellView>"                        style "combobox_cellview"
+widget_class "*<GtkComboBox>*<GtkCellView>"    style "combobox_cellview"
 
 # Disable white text shadows
-widget_class "*<GtkLabel>"                                         style "disable_text_shadow"
-widget_class "*<GtkCellView>"                                      style "disable_text_shadow"
+widget_class "*<GtkLabel>"    style "disable_text_shadow"
+widget_class "*<GtkCellView>"    style "disable_text_shadow"
 
 # GTK tooltips
-widget "gtk-tooltip*"                                              style "tooltip"
+widget "gtk-tooltip*"    style "tooltip"

@@ -21,19 +21,23 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="10.75"
-     inkscape:cx="24"
-     inkscape:cy="24.046512"
-     inkscape:window-width="1366"
-     inkscape:window-height="698"
-     inkscape:window-x="0"
+     showgrid="true"
+     inkscape:zoom="12.35"
+     inkscape:cx="20.566802"
+     inkscape:cy="12.712551"
+     inkscape:window-width="1329"
+     inkscape:window-height="733"
+     inkscape:window-x="37"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1937" />
+     inkscape:current-layer="svg1937">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1773" />
+  </sodipodi:namedview>
   <path
-     d="M 24,4 C 12.96,4 4,12.96 4,24 4,35.04 12.96,44 24,44 35.04,44 44,35.04 44,24 44,12.96 35.04,4 24,4 Z m 0,2 C 34,6 42,14 42,24 42,34 34,42 24,42 14,42 6,34 6,24 6,14 14,6 24,6 Z"
+     d="M 5,4.9999998 V 42.999999 H 43 V 4.9999998 Z m 2,2.054054 H 41 V 40.945945 H 7 Z"
      style="stroke-width:2"
      id="path3606"
-     sodipodi:nodetypes="ssssssssss" />
+     sodipodi:nodetypes="cccccccccc" />
 </svg>
