@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=mx-ease4
+Name=mx-ease
 Comment=A Theme for MX-Linux
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=mx-ease4
-MetacityTheme=mx-ease4
+GtkTheme=mx-ease
+MetacityTheme=mx-ease
 IconTheme=Papirus
 CursorTheme=DMZ-Black
 ButtonLayout=close,minimize,maximize:menu

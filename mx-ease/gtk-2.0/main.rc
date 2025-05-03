@@ -13,8 +13,9 @@ style "default" {
   # Style Properties #
   ####################
 
+  GtkWidget::interior_focus     = 0
   GtkWidget::focus-padding      = 0
-  GtkWidget::focus-line-width   = 2
+  GtkWidget::focus-line-width   = 0
   GtkWidget::focus-line-pattern = "\2\1"
 
   GtkToolbar::space-size       = 5 # 1 + 2*2 (separator + margins)
@@ -2043,6 +2044,14 @@ style "button" {
       function = BOX
       state    = INSENSITIVE
       file     = "assets/button-disabled.png"
+      border   = {8, 8, 8, 8}
+      stretch  = TRUE
+    }
+
+    image {
+      function = FOCUS
+      #state    = INSENSITIVE
+      file     = "assets/button-focus.png"
       border   = {8, 8, 8, 8}
       stretch  = TRUE
     }

@@ -35,7 +35,7 @@ gtk-color-scheme = "visited_link_color:#9C27B0"
 # Made-up
 gtk-color-scheme = "prelight_color:#a3b5d9"
 gtk-color-scheme = "sidebar_color:#d9d9d9"
-gtk-color-scheme = "test_color:#ff00ff"
+gtk-color-scheme = "test_color:#909090"
 
 
 # Set GTK settings

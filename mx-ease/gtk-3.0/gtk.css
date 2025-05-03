@@ -922,13 +922,13 @@ stacksidebar.sidebar row.needs-attention > label:dir(rtl), .stack-switcher > but
 }
 /*HERE*/
 viewswitcher button:not(.suggested-action):not(.destructive-action), .linked:not(.vertical) > button {
-    border-color: #ececee;
-    border-right-width: 2px;
+    border-color: #424242;
+    border-width: 1px;
 }
 /*HERE*/
 viewswitcher button:not(.suggested-action):not(.destructive-action), .linked:not(.vertical) > button:hover {
-    border-color: #0f56d9;
-    border-right-width: 2px;
+    border-color: #424242;
+    border-width: 1px;
 }
 
 /*HERE
@@ -8754,7 +8754,8 @@ window#whiskermenu-window > frame > stack scrolledwindow scrollbar trough {
 
 /*TO HERE*/
 
-
+button.text-button.image-button {border: solid 1px transparent }
+button.text-button.image-button:hover {border: solid 1px #0f56d9 }
 
 
 /* GTK NAMED COLORS
