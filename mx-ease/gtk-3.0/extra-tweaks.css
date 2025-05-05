@@ -28,6 +28,8 @@ toolbar toolbutton button:hover { color: #424242; background-color: #c3d5f6; bor
 
 .thunar .standard-view .view:selected:hover { color: #ffffff; background-color: #0f56d9; }
 
+.thunar .view .rubberband { background-color: alpha(#0f56d9, 0.35); }
+
 .thunar menubar > menuitem:hover { color: #ffffff; background-color: #0f56d9; }
 
 .thunar menuitem:hover { color: #1d2324; background-color: #c3d5f6; }

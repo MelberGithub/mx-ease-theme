@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=mx-ease-xhidpi
+Comment=A Theme for MX-Linux
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=mx-ease-xhidpi
+MetacityTheme=mx-ease-xhidpi
+IconTheme=Papirus
+CursorTheme=DMZ-Black
+ButtonLayout=close,minimize,maximize:menu
