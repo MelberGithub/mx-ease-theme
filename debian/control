@@ -1,0 +1,13 @@
+Source: mx-ease-themes
+Section: gnome
+Priority: optional
+Maintainer: Melber <melber-mx-linux@gmail.com>
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 13),
+Standards-Version: 4.6.2
+Homepage: <https:/mxlinux.org>
+
+Package: mx-ease-themes
+Architecture: all
+Depends: yad
+Description: mx-ease themes for MX-Linux
