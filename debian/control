@@ -9,5 +9,5 @@ Homepage: <https:/mxlinux.org>
 
 Package: mx-ease-themes
 Architecture: all
-Depends: yad
+Depends: gtk2-engines-pixbuf
 Description: mx-ease themes for MX-Linux
