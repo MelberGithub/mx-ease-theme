@@ -9,5 +9,5 @@ Homepage: <https:/mxlinux.org>
 
 Package: mx-ease-themes
 Architecture: all
-Depends: gtk2-engines-pixbuf
+Depends: gtk2-engines-pixbuf, gnome-themes-extra
 Description: mx-ease themes for MX-Linux

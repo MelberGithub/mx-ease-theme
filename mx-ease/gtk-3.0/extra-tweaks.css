@@ -15,11 +15,8 @@ toolbar toolbutton button:hover { color: #424242; background-color: #c3d5f6; bor
 
 /* Thunar */
 
-/*.thunar .sidebar .view { color: #f2f2f2; background-color: #dedfe3; border-color: #424242 }*/
-
 .thunar .sidebar .view:selected { color: #ffffff; background-color: #0f56d9; }
 .thunar .sidebar .view:hover { color: #1d2324; background-color: #c3d5f6; }
-
 .thunar .standard-view .view { color: #1d2324; background-color: #f5f5f5; }
 
 .thunar .standard-view .view:selected { color: #ffffff; background-color: #0f56d9; }
@@ -57,9 +54,6 @@ toolbar toolbutton button:hover { color: #424242; background-color: #c3d5f6; bor
 .thunar check:not(list):checked {-gtk-icon-source: -gtk-scaled(url("assets/selectionmode-checkbox-checked.png")) }
 .thunar check:not(list) {-gtk-icon-source: -gtk-scaled(url("assets/selectionmode-checkbox-unchecked.png")) }
 
-/*.thunar scrolledwindow { border-color: #ff0000; border-width: 10px }
-*/
-
 
 /* Geany */
 
@@ -89,9 +83,6 @@ box grid toolbar button { border: solid 1px transparent; }
 
 box box button { border: solid 1px transparent; }
 
-/*
-box box grid button { border: solid 1px #424242; }
-*/
 
 /*Claws Mail*/
 
@@ -100,8 +91,29 @@ box box grid button { border: solid 1px #424242; }
 #mainwindow #folderview_sctree:selected {color: #ffffff
 ; background-color: #0f56d9; }
 
-/*
-#places_sidebar:hover {color: #1d2324; background-color: #ff0000; }
 
-#GtkFileChooserDialog #places_sidebar:selected {color: #ffffff; background-color: #0f56d9; }
-*/
+/*Galculator*/
+
+box box box grid button.toggle {
+  color: #1d2324;
+  background-color: #f5f5f5;
+  border: solid 1px #424242;
+}
+
+box box box grid button.toggle:hover {
+  color: #1d2324;
+  background-color: #c3d5f6;
+  border: solid 1px #424242;
+}
+
+box box box grid button.toggle:active {
+  color: #1d2324;
+  background-color: #c3d5f6;
+  border: solid 1px #0f56d9;
+}
+
+box box box grid button.toggle:disabled {
+  color: #808080;
+  background-color: #ececee;
+  border: solid 1px #808080;
+}

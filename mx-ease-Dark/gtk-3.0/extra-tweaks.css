@@ -51,7 +51,6 @@ toolbar toolbutton button:hover { color: #424242; background-color: #A3B5D9; bor
 
 .thunar menuitem:hover { color: #1d2324; background-color: #A3B5D9; }
 
-/* here */
 .thunar toolbar toolitem button box {
     color: #ffffff;
     background-color: transparent;
@@ -84,7 +83,6 @@ toolbar toolbutton button:hover { color: #424242; background-color: #A3B5D9; bor
     background-color: #2e63ba;
     border: solid 1px #2e63ba;
 }
-/* to here */
 
 .thunar radio:not(list):checked {-gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png")) }
 .thunar radio:not(list) {-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png")) }
@@ -121,9 +119,6 @@ box grid toolbar button { border: solid 1px transparent; }
 
 box box button { border: solid 1px transparent; }
 
-/*
-box box grid button { border: solid 1px #424242; }
-*/
 
 /*Claws Mail*/
 
@@ -132,8 +127,29 @@ box box grid button { border: solid 1px #424242; }
 #mainwindow #folderview_sctree:selected {color: #ffffff
 ; background-color: #2e63ba; }
 
-/*
-#places_sidebar:hover {color: #1d2324; background-color: #ff0000; }
 
-#GtkFileChooserDialog #places_sidebar:selected {color: #ffffff; background-color: #0f56d9; }
-*/
+/*Galculator*/
+
+box box box grid button.toggle {
+  color: #ffffff;
+  background-color: #505050;
+  border: solid 1px #808080;
+}
+
+box box box grid button.toggle:hover {
+  color: #1d2324;
+  background-color: #a3b5d9;
+  border: solid 1px #a3b5d9;
+}
+
+box box box grid button.toggle:active {
+  color: #ffffff;
+  background-color: #2e63ba;
+  border: solid 1px #2e63ba;
+}
+
+box box box grid button.toggle:disabled {
+  color: #909090;
+  background-color: #424242;
+  border: solid 1px #808080;
+}
