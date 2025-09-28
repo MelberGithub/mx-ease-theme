@@ -153,3 +153,19 @@ box box box grid button.toggle:disabled {
   background-color: #424242;
   border: solid 1px #808080;
 }
+
+
+/*seahorse*/
+
+viewport clamp list row { background-color: #505050; color: #cacdd0; box-shadow: none; }
+viewport clamp list row label { background-color: #505050; color: #cacdd0; }
+viewport clamp list row:hover { background-color: #a3b5d9; color: #424242; }
+viewport clamp list row:hover label { background-color: #a3b5d9; color: #424242; }
+viewport clamp list row:selected { background-color: #2e63ba; color: #ffffff; }
+viewport clamp list row:selected label { background-color: #2e63ba; color: #ffffff; }
+viewport clamp list row:active { border: solid 1px #2e63ba; background-color: #a3b5d9; color: #424242; }
+
+viewport list row:selected { background-color: #2e63ba; color: #ffffff; }
+viewport list row:selected label { background-color: #2e63ba; color: #ffffff; }
+viewport list row:hover { background-color: #a3b5d9; color: #424242; }
+viewport list row:selected:hover { background-color: #2e63ba; color: #ffffff; }

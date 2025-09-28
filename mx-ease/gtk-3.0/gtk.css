@@ -3810,19 +3810,19 @@ list row {
   padding: 3px 6px;
 }
 
-.budgie-popover.budgie-menu row.activatable > button.flat, treeview.view header button, row.activatable {
+/*.budgie-popover.budgie-menu row.activatable > button.flat, treeview.view header button, row.activatable {
   outline: none;
   background-image: image(rgba(26, 115, 232, 0));
   background-position: 3px center;
   background-repeat: no-repeat;
   background-size: 3px 16px;
-  box-shadow: inset 0 0 0 9999px transparent;
-}
+  box-shadow: inset 0 0 0 9999px transparent; 
+} */
 
-.budgie-popover.budgie-menu row.activatable > button.flat:hover, treeview.view header button:hover, row.activatable:hover {
+/*.budgie-popover.budgie-menu row.activatable > button.flat:hover, treeview.view header button:hover, row.activatable:hover {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1), background-image 0;
   box-shadow: inset 0 0 0 9999px alpha(currentColor, 0.08);
-}
+} */
 
 .budgie-popover.budgie-menu row.activatable > button.has-open-popup.flat, treeview.view header button.has-open-popup, .budgie-popover.budgie-menu row.activatable > button.flat:active, treeview.view header button:active, row.activatable.has-open-popup, row.activatable:active {
   transition: background-image 1200ms cubic-bezier(0, 0, 0.2, 1), box-shadow 1200ms cubic-bezier(0, 0, 0.2, 1);
@@ -3831,13 +3831,13 @@ list row {
 
 row:selected {
   color: inherit;
-  background-image: url("assets/selected-line.png"), url("assets/selected-line@2.png");
-  transition: box-shadow 1200ms cubic-bezier(0, 0, 0.2, 1), background-image 1200ms cubic-bezier(0, 0, 0.2, 1);
+/*  background-image: url("assets/selected-line.png"), url("assets/selected-line@2.png");
+  transition: box-shadow 1200ms cubic-bezier(0, 0, 0.2, 1), background-image 1200ms cubic-bezier(0, 0, 0.2, 1); */
 }
 
 row:selected image,
 row:selected label {
-  color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
 }
 
 row:selected button image,
@@ -8636,123 +8636,97 @@ border-top: 2px solid #0f56d9;
 /******************
  ! Whisker Menu *
 *******************/
-/*set custom gtk3/css code below */
-/* Background is top bar except behind toolbuttons*/
-/* color is cursor, corner triangle, and user name*/
-window#whiskermenu-window {
+
+#whiskermenu-window {
   background-color: #424242;
   color: #f5f5f5;
 }
 
-/* Set colour of whisker perimeter border to match background of menu*/
 #whiskermenu-window border {
-  background-color: #424242;
-  border-color: #0f56d9;
-  color: #f5f5f5;
+  border: solid 2px #0f56d9;
 }
 
-/* Make sidebar buttons match */
-/* Background is area behind category icons and tool bars*/
-/* color is category text*/
-#whiskermenu-window button {
+#whiskermenu-window .title-area {
   background-color: #424242;
   color: #f5f5f5;
-  border-radius: 0px;
 }
-/* Background color is selection cursor upon mouseover*/
-#whiskermenu-window button:hover {
-  background-color: #c3d5f6;
-  color: #1d2324;
-}
-/* Background color is selection cursor upon clicking*/
-#whiskermenu-window button:checked {
-  background-color: #c3d5f6;
-  color: #1d2324;
-}
-
-#whiskermenu-window button:selected {
-  background-color: #ff0000;
-  color: #1d2324;
-}
-
-/* Background is area where applications appear */
-/* color is the application text*/
-/* Make treeview match */
-
-#whiskermenu-window treeview {
-  background-color: #f5f5f5;
-  color:  #1d2324;
-}
-
-/* Background is selection box color in tree view*/
-/* color is the selected application text*/
-/* this setting appears needed despite line 8281 settings */
-#whiskermenu-window treeview:hover {
-  background-color: #0f56d9;
-  color: #f5f5f5;
-}
-
-#whiskermenu-window treeview:selected {
-  background-color: #0f56d9;
-  color: #f5f5f5;
-}
-
-#whiskermenu-window treeview:active {
-  background-color: #0f56d9;
-  color: #f5f5f5;
-}
-
 
 #whiskermenu-window entry.search {
-  border-radius: 0px;
-  border-color: #ececee;
-  border-width: 1px;
+  background-color: #f5f5f5;
+  border: solid 2px #0f56d9;
 }
 
 #whiskermenu-window entry.search:focus {
   background-color: #f5f5f5;
   color: #1d2324;
-  border-color: #0f56d9;
-  border-width: 2px;
+  border: solid 2px #0f56d9;
 }
 
-#whiskermenu-window treeview:selected {
-  background-color: #0f56d9;
+#whiskermenu-window .categories {
+  background-color: #424242;
   color: #f5f5f5;
 }
 
-/*Whisker Scrollbar*/
-
-window#whiskermenu-window > frame > stack scrolledwindow scrollbar {
+#whiskermenu-window .category-button {
   background-color: #424242;
-  border-color: #424242;
+  color: #f5f5f5;
 }
 
-window#whiskermenu-window > frame > stack scrolledwindow scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
-  background-color: #cacdd0;
-}
-
-window#whiskermenu-window > frame > stack scrolledwindow scrollbar slider {
-  background-color: #cacdd0;
-}
-
-window#whiskermenu-window > frame > stack scrolledwindow scrollbar slider:hover {
-  background-color: #c3d5f6;
-}
-
-window#whiskermenu-window > frame > stack scrolledwindow scrollbar slider:hover:active {
+#whiskermenu-window .category-button:focus {
   background-color: #0f56d9;
+  color: #ffffff;
 }
 
-window#whiskermenu-window > frame > stack scrolledwindow scrollbar slider:disabled {
-  background-color: transparent;
+#whiskermenu-window .category-button:checked {
+  background-color: #0f56d9;
+  color: #ffffff;
 }
 
-window#whiskermenu-window > frame > stack scrolledwindow scrollbar trough {
+#whiskermenu-window .category-button:hover {
+  background-color: #c3d5f6;
+  color: #424242;
+}
+
+
+#whiskermenu-window .contents {
   background-color: #424242;
+  color: #ffffff;
 }
 
-/*TO HERE*/
+#whiskermenu-window .launchers-pane {
+  background-color: #f5f5f5;
+  color: #1d2324;
+}
+
+#whiskermenu-window .launchers {
+  background-color: #f5f5f5;
+  color: #1d2324;
+  border: none;
+}
+
+
+#whiskermenu-window .launchers:unfocus {
+  background-color: #f5f5f5;
+  color: #1d2324;
+}
+
+
+#whiskermenu-window .launchers:selected {
+  background-color: #0f56d9;
+  color: #ffffff;
+}
+
+#whiskermenu-window .launchers:active {
+  background-color: #0f56d9;
+  color: #ffffff;
+}
+
+
+#whiskermenu-window .launchers:hover {
+  background-color: #c3d5f6;
+  color: #424242;
+} 
+/* */
 
 button.text-button.image-button {border: solid 1px transparent }
 button.text-button.image-button:hover {border: solid 1px #0f56d9 }

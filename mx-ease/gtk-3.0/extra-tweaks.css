@@ -117,3 +117,18 @@ box box box grid button.toggle:disabled {
   background-color: #ececee;
   border: solid 1px #808080;
 }
+
+
+/*seahorse*/
+
+viewport clamp list row { background-color: #f5f5f5; color: #424242; box-shadow: none; }
+viewport clamp list row label { background-color: #f5f5f5; color: #424242; }
+viewport clamp list row:hover { background-color: #c3d5f6; color: #424242; }
+viewport clamp list row:hover label { background-color: #c3d5f6; color: #424242; }
+viewport clamp list row:selected { background-color: #0f56d9; color: #ffffff; }
+viewport clamp list row:selected label { background-color: #0f56d9; color: #ffffff; }
+viewport clamp list row:active { border: solid 1px #0f56d9; background-color: #c3d5f6; color: #ffffff; }
+viewport list row:selected { background-color: #0f56d9; color: #ffffff; }
+viewport list row:selected label { background-color: #0f56d9; color: #ffffff; }
+viewport list row:hover { background-color: #c3d5f6; color: #424242; }
+viewport list row:selected:hover { background-color: #0f56d9; color: #ffffff; }
