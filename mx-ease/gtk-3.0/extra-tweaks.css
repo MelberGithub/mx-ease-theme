@@ -135,6 +135,4 @@ viewport list row:selected:hover { background-color: #0f56d9; color: #ffffff; }
 
 /*libreoffice*/
 
-grid grid { background-color: transparent; }
-
 scrolledwindow .view:hover   { color: #424242; background-color: #c3d5f6; }

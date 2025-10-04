@@ -6812,7 +6812,7 @@ entry.search > window.background > frame > border {
  * Libre-Office *
  ****************/
 window.background:not(.solid-csd):not(.csd) > grid.horizontal > grid.horizontal {
-  background-color: #1d2324;
+  background-color: #ececee;
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.12);
 }
 
@@ -6822,12 +6822,12 @@ window.background:not(.solid-csd):not(.csd) > grid.horizontal > grid.horizontal 
 }
 
 window.background:not(.solid-csd):not(.csd) > grid.horizontal > grid.horizontal:backdrop {
-  background-color: #3c3c3c;
+  background-color: #ececee;
 }
 
 window.background:not(.solid-csd):not(.csd) > notebook:not(.frame) {
   border: none;
-  background-color: #f5f5f5;
+  background-color: #ececee;
   box-shadow: none;
 }
 
