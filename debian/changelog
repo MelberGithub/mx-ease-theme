@@ -1,3 +1,11 @@
+mx-ease-themes (25.10.01) mx; urgency=medium
+
+  * mx-ease and ease-dark - seahorse fixes
+  * mx-ease and ease-dark - libreoffice fix
+  * mx-ease-dark - gtk2 and xfwm4 fixes
+
+ -- Melber <melber-mx-linux@gmail.com>  Sat, 04 Oct 2025 17:45:00 +0100
+
 mx-ease-themes (25.09.04) mx; urgency=medium
 
   * mx-ease and ease-dark - xfce4-whiskermenu fixes

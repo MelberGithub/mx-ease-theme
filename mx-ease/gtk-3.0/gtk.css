@@ -8705,7 +8705,7 @@ border-top: 2px solid #0f56d9;
 }
 
 
-#whiskermenu-window .launchers:unfocus {
+#whiskermenu-window .launchers:disabled {
   background-color: #f5f5f5;
   color: #1d2324;
 }

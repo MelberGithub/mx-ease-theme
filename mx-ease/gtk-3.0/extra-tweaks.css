@@ -132,3 +132,9 @@ viewport list row:selected { background-color: #0f56d9; color: #ffffff; }
 viewport list row:selected label { background-color: #0f56d9; color: #ffffff; }
 viewport list row:hover { background-color: #c3d5f6; color: #424242; }
 viewport list row:selected:hover { background-color: #0f56d9; color: #ffffff; }
+
+/*libreoffice*/
+
+grid grid { background-color: transparent; }
+
+scrolledwindow .view:hover   { color: #424242; background-color: #c3d5f6; }

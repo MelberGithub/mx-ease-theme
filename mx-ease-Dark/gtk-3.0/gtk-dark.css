@@ -8803,7 +8803,7 @@ window.background.csd.thunar scrolledwindow.frame.sidebar.shortcuts-pane treevie
 }
 
 
-#whiskermenu-window .launchers:unfocus {
+#whiskermenu-window .launchers:disabled {
   background-color: #505050;
   color: #ececee;
 }
