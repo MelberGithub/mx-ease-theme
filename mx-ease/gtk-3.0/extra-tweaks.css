@@ -80,8 +80,7 @@ scrolledwindow button { border: 1px solid transparent; }
 .standard-view .view:selected { color: #ffffff; background-color: #0f56d9; }
 
 box grid toolbar button { border: solid 1px transparent; }
-
-box box button { border: solid 1px transparent; }
+scrolledwindow viewport grid button { border: solid 1px transparent; }
 
 
 /*Claws Mail*/

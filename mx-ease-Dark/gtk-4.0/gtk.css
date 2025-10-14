@@ -7026,12 +7026,12 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 
 .sidebar-pane:dir(ltr), .sidebar-pane:dir(ltr) banner > revealer > widget, .sidebar-pane.end:dir(rtl), .sidebar-pane.end:dir(rtl) banner > revealer > widget {
   box-shadow: none;
-  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  /* border-right: 1px solid rgba(0, 0, 0, 0.08); */
 }
 
 .sidebar-pane:dir(rtl), .sidebar-pane:dir(rtl) banner > revealer > widget, .sidebar-pane.end:dir(ltr), .sidebar-pane.end:dir(ltr) banner > revealer > widget {
   box-shadow: none;
-  border-left: 1px solid rgba(0, 0, 0, 0.08);
+ /* border-left: 1px solid rgba(0, 0, 0, 0.08); */
 }
 
 /* Middle pane in three-pane setups */
@@ -7190,7 +7190,7 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 .sidebar-pane .content-pane.end:dir(rtl),
 .sidebar-pane .content-pane.end:dir(rtl) banner > revealer > widget {
   box-shadow: none;
-  border-right: 1px solid rgba(0, 0, 0, 0.08);
+ /* border-right: 1px solid rgba(0, 0, 0, 0.08);*/
 }
 
 .content-pane .sidebar-pane:dir(rtl), .content-pane .sidebar-pane:dir(rtl) banner > revealer > widget, .content-pane .sidebar-pane.end:dir(ltr), .content-pane .sidebar-pane.end:dir(ltr) banner > revealer > widget,
@@ -7199,7 +7199,7 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 .sidebar-pane .content-pane.end:dir(ltr),
 .sidebar-pane .content-pane.end:dir(ltr) banner > revealer > widget {
   box-shadow: none;
-  border-left: 1px solid rgba(0, 0, 0, 0.08);
+ /* border-left: 1px solid rgba(0, 0, 0, 0.08); */
 }
 
 .sidebar-pane .sidebar-pane {
@@ -7923,5 +7923,9 @@ menubar item label {
   color: #ffffff;
 }
 
-/*IMPORT CSS
-@import url("extra-tweaks.css"); */
+/*##########*/
+
+headerbar { border: solid 1px #1d2324; }
+headerbar:backdrop { border: solid 1px #1d2324; }
+.sidebar-pane headerbar { border: solid 1px #1d2324; }
+
