@@ -178,7 +178,7 @@ label:disabled {
 }
 
 headerbar label:disabled, tab label:disabled, button label:disabled {
-  color: inherit;
+  color: #909090;
 }
 
 label.osd {
@@ -514,7 +514,7 @@ button:disabled {
   box-shadow: none;
   background-color: #ececee;
   color: #ececee;
-  /*border-color: #ececee;*/
+  border-color: #909090;
 }
 
 button:checked {
@@ -6837,7 +6837,7 @@ window.background:not(.solid-csd):not(.csd) > notebook:not(.frame) > stack {
 }
 
 #combobox > button {
-  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 1px solid #424242;
 }
 
 #gtk-combobox-popup-window scrolledwindow.frame {
