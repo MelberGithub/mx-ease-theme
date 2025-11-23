@@ -469,7 +469,7 @@ toast button:disabled, menubutton.osd > button:disabled, infobar.error > reveale
 toast button:checked:disabled, menubutton.osd > button:checked:disabled, infobar.error > revealer > box button:checked:disabled, infobar.warning > revealer > box button:checked:disabled, infobar.action > revealer > box button:checked:disabled, infobar.question > revealer > box button:checked:disabled, popover.background.touch-selection button:checked:disabled, popover.background.magnifier button:checked:disabled, .selection-mode headerbar windowcontrols > button:checked:disabled:not(.suggested-action):not(.destructive-action), headerbar.selection-mode button:checked:disabled:not(.suggested-action):not(.destructive-action) {
   color: #cacdd0;
 }
-/*HERE*/
+
 button {
   min-height: 24px;
   min-width: 16px;
@@ -525,7 +525,6 @@ button:checked {
   border-bottom-color: #0f56d9;
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-color 300ms cubic-bezier(0, 0, 0.2, 1);
 }
-/*TO HERE*/
 
 button:checked:hover {
   box-shadow: inset 0 0 0 9999px transparent;
@@ -1622,7 +1621,7 @@ headerbar button:backdrop:checked:not(.suggested-action):not(.destructive-action
 headerbar button:backdrop:checked:disabled:not(.suggested-action):not(.destructive-action) {
   color: #cacdd0;
 }
-  /*TO HERE JULY*/
+
 headerbar entry {
   background-color: #f5f5f5;
   color: #424242;
@@ -1677,8 +1676,7 @@ headerbar {
   padding: 0;
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: #1d2324;
-  /*HERE JULY
-    border-top: 3px solid #1d2324;  */
+  /*border-top: 3px solid #1d2324;*/
 }
 
 headerbar:disabled {
@@ -1690,7 +1688,7 @@ headerbar:disabled {
 headerbar:backdrop {
   background-color: #424242;
   color: #cacdd0;
- /* border-top: 3px solid #424242;*/
+  /*border-top: 3px solid #424242;*/
 }
 
 headerbar:backdrop:disabled {
@@ -1910,10 +1908,6 @@ headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action
   color: #ffffff;
 }
 
-/* 
-############ HERE JULY ##########
-*/
-
 headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).close > image {
   background-color: #1d2324;
   color: #ffffff;
@@ -1939,7 +1933,6 @@ headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action
   border-style: solid;
 }
 
-/**/
 headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).close:backdrop > image {
   background-color: #424242;
   color: #ffffff;
@@ -1947,8 +1940,6 @@ headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action
   border-color: #ffffff;
   border-style: solid;
 }
-/**/
-
 
 headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).maximize > image {
   background-color: #1d2324;
@@ -1976,7 +1967,6 @@ headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action
   border-style: solid;
 }
 
-/**/
 headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).maximize:backdrop > image {
   background-color: #424242;
   color: #ffffff;
@@ -1984,7 +1974,6 @@ headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action
   border-color: #424242;
   border-style: solid;
 }
-/**/
 
 headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).minimize > image {
   background-color: #1d2324;
@@ -2012,7 +2001,6 @@ headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action
   border-style: solid;
 }
 
-/**/
 headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).minimize:backdrop > image {
   background-color: #424242;
   color: #ffffff;
@@ -2020,7 +2008,6 @@ headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action
   border-color: #424242;
   border-style: solid;
 }
-/**/
 
 headerbar.default-decoration {
   background-color: #1d2324;
@@ -2037,7 +2024,7 @@ headerbar windowcontrols:inactive > image {
   color: #cacdd0;
 }
 
-/* ########  TO HERE ##### */
+
 /*
 headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).close:hover > image {
   background-color: #c3d5f6;
@@ -2056,11 +2043,10 @@ headerbar.default-decoration {
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
 }
 */
-/**/
+
 headerbar.default-decoration:backdrop {
   background-color: transparent;
 }
-/**/
 
 .tiled headerbar.default-decoration, .maximized headerbar.default-decoration, .fullscreen headerbar.default-decoration {
   box-shadow: none;
@@ -2932,7 +2918,6 @@ scrollbar > range > trough > slider {
   min-width: 10px;
   min-height: 10px;
   border: none;
-  /*here july*/
   border-radius: 20px;
   background-clip: padding-box;
   background-color: rgba(0, 0, 0, 0.26);
@@ -2947,7 +2932,7 @@ scrollbar > range > trough > slider:hover {
 scrollbar > range > trough > slider:active {
   background-color: #0f56d9;
 }
-  /*to here july*/
+
 scrollbar > range > trough > slider:disabled {
   background-color: rgba(0, 0, 0, 0.12);
 }
@@ -4279,8 +4264,6 @@ separator.sidebar {
 }
 
 /*
-######HERE AUGUST########
-
 .navigation-sidebar > row:selected {
   background-color: alpha(currentColor, 0.1);
   color: rgba(0, 0, 0, 0.87);
@@ -4312,8 +4295,6 @@ separator.sidebar {
   background-color: rgba(0, 0, 0, 0.08);
   margin: 6px 0;
 }
-
-######TO HERE AUGUST########
 */
 
 /****************
@@ -4336,10 +4317,7 @@ placessidebar list {
   padding: 6px 0;
 }
 
-/* ***********
-HERE AUGUST
-**************
-
+/*
 placessidebar .navigation-sidebar > row {
   min-height: 32px;
   margin: 0 6px;
@@ -4403,10 +4381,7 @@ placessidebar .navigation-sidebar > row:drop(active) {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), box-shadow 0ms;
   box-shadow: inset 0 0 0 9999px alpha(currentColor, 0.08);
 }
-
-***********
-TO HERE AUGUST
-**************/
+*/
 
 placesview .server-list-button > image {
   transition: 200ms cubic-bezier(0, 0, 0.2, 1);
@@ -4830,7 +4805,6 @@ stackswitcher {
   background-color: alpha(currentColor, 0.05);
 }
 
-/**/
 stackswitcher.linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action) {
     color: #ffffff;
   margin: 0 0;
@@ -4838,7 +4812,6 @@ stackswitcher.linked:not(.vertical) > button:not(.suggested-action):not(.destruc
   background-color: transparent;
   border: none;
 }
-/**/
 
 stackswitcher.linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action).text-button {
   min-width: 100px;
@@ -4853,7 +4826,6 @@ stackswitcher.linked:not(.vertical) > button:not(.suggested-action):not(.destruc
   background-image: radial-gradient(circle, alpha(#0f56d9, 0.08) 10%, transparent 0%);
 }
 
-/**/
 stackswitcher.linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action):checked {
   background-color: #0f56d9;
   color: #ffffff;
@@ -4863,7 +4835,6 @@ stackswitcher.linked:not(.vertical) > button:not(.suggested-action):not(.destruc
   background-color: #c3d5f6;
   color: #1d2324;
 }
-/**/
 
 stackswitcher button.text-button {
   min-width: 100px;
@@ -6552,7 +6523,7 @@ viewswitcher.wide {
 viewswitcher.wide > button.toggle, viewswitcher.wide > button.toggle.flat {
   padding: 0 6px;
 }
-/**/
+
 viewswitcher.wide button.toggle, viewswitcher.wide button.toggle.flat {
   background-color: #0f56d9;
   color: #ffffff;
@@ -6562,7 +6533,6 @@ viewswitcher.wide button.toggle:checked, viewswitcher.wide button.toggle.flat:ch
   background-color: #0f56d9;
   color: #ffffff;
 }
-/**/
 
 viewswitcher.wide button.toggle:checked:backdrop, viewswitcher.wide button.toggle.flat:checked:backdrop {
   color: rgba(255, 255, 255, 0.5);
@@ -6719,7 +6689,7 @@ list.boxed-list > row.expander row.header, row.expander list.nested > row {
   transition: 200ms cubic-bezier(0, 0, 0.2, 1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
-/*HERE JULY*/
+
 list.content > row:not(:selected).activatable:hover, list.content > row.expander row.header:not(:selected).activatable:hover,
 list.boxed-list > row:not(:selected).activatable:hover,
 list.boxed-list > row.expander row.header:not(:selected).activatable:hover, row.expander list.nested > row:not(:selected).activatable:hover {
@@ -6733,7 +6703,7 @@ list.boxed-list > row.expander row.header:not(:selected).activatable:active, row
   background-color: #0f56d9;
     color: #ffffff;
 }
-/*TO HERE JULY*/
+
 list.content > row:not(:selected).activatable.has-open-popup, list.content > row.expander row.header:not(:selected).activatable.has-open-popup,
 list.boxed-list > row:not(:selected).activatable.has-open-popup,
 list.boxed-list > row.expander row.header:not(:selected).activatable.has-open-popup, row.expander list.nested > row:not(:selected).activatable.has-open-popup {
@@ -7170,7 +7140,7 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 .sidebar-pane .content-pane.end:dir(ltr),
 .sidebar-pane .content-pane.end:dir(ltr) banner > revealer > widget {
   box-shadow: none;
- /* border-left: 1px solid rgba(0, 0, 0, 0.08);*/
+  /*border-left: 1px solid rgba(0, 0, 0, 0.08);*/
 }
 
 .sidebar-pane .sidebar-pane {
@@ -7628,7 +7598,6 @@ color: #ffffff;
 background-color: #0f56d9;
 }
 
-/*end nov24*/
 
 filechooser placessidebar scrolledwindow viewport list {
 background-color: #ececee;
@@ -7655,7 +7624,7 @@ background-color: #0f56d9;
 color: #ffffff;
 }
 
-/*NEW*/
+
 .navigation-sidebar {
 background-color: #424242;
 }
@@ -7732,7 +7701,7 @@ color: #424242;
 border: 2px solid #0f56d9;
 }
 
-/* ###nautilus file manager### */
+/*nautilus file manager*/
 /*headerbar*/
 toastoverlay widget toolbarview revealer windowhandle box widget headerbar {
 background-color: #1d2324;
@@ -7760,7 +7729,6 @@ background-color: #0f56d9;
 color: #ffffff;
 }
 
-/*##########*/
 
 paned box stack row:hover {
 background-color: #c3d5f6;
@@ -7781,8 +7749,6 @@ placessidebar row label:selected {
 background-color: #0f56d9;
 color: #ffffff;
 }
-
-/*##########*/
 
 headerbar { border: solid 1px #1d2324; }
 headerbar:backdrop { border: solid 1px #1d2324; }

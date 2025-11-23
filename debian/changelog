@@ -1,3 +1,11 @@
+mx-ease-themes (25.11.01) mx; urgency=medium
+
+  * mx-ease - gtk3 fix chromium tooltip
+  * mx-ease-dark - gtk2 fix progressbar
+  * mx-ease and ease-dark - clean up gtk3 and gtk4 css
+
+ -- Melber <melber-mx-linux@gmail.com>  Sun, 23 Nov 2025 22:30:00 +0100
+
 mx-ease-themes (25.10.02) mx; urgency=medium
 
   * mx-ease and ease-dark - gtk3 fixes
