@@ -139,7 +139,7 @@ XfdesktopIconView.view .rubberband,
 treeview.view rubberband,
 flowbox rubberband {
   border: 1px solid #2e63ba;
-  background-color: transparent;
+  background-color: alpha(#2e63ba, 0.35);
 }
 
 flowbox flowboxchild {
