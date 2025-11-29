@@ -1,3 +1,9 @@
+mx-ease-themes (25.11.02) mx; urgency=medium
+
+  * mx-ease and ease-dark - fix transparency in xfce desktop selection window
+
+ -- Melber <melber-mx-linux@gmail.com>  Sat, 29 Nov 2025 10:10:00 +0100
+
 mx-ease-themes (25.11.01) mx; urgency=medium
 
   * mx-ease - gtk3 fix chromium tooltip
