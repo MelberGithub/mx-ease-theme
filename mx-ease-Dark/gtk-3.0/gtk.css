@@ -659,23 +659,38 @@ button.text-button.image-button image:not(:only-child) {
 }
 
 .linked > button:not(:only-child):focus {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1), border 300ms cubic-bezier(0, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
-  outline: none;
-  box-shadow: none;
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
   background-color: #505050;
-  color: #ececee;
-  border-color: rgba(255, 255, 255, 0.08);
-  border-top-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border: solid 1px #ffffff;
 }
 
-.linked > button:not(:only-child):checked:focus {
-  box-shadow: none;
-  background-clip: border-box;
+.linked > button:not(:only-child):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+  background-color: #a3b5d9;
+  color: #1d2324;
+  border: solid 1px #a3b5d9;
+}
+
+.linked > button:not(:only-child):active {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px #0f56d9;
   background-color: #2e63ba;
-  color: white;
-  border-color: #498fec;
-  border-bottom-color: #1b73e8;
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-color 300ms cubic-bezier(0, 0, 0.2, 1);
+  color: #ffffff;
+  border: solid 1px #2e63ba;
+}
+
+.linked > button:not(:only-child):not(:focus) {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+  background-color: #505050;
+  color: #ececee;
+  border: solid 1px #909090;
+}
+
+.linked > button:not(:only-child):not(:focus):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+  background-color: #a3b5d9;
+  color: #1d2324;
+  border: solid 1px #a3b5d9;
 }
 
 .linked:not(.vertical) > button.flat:not(:only-child), .linked.vertical > button.flat:not(:only-child) {

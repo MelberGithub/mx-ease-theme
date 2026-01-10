@@ -29,19 +29,20 @@ toolbar toolbutton button:hover { color: #424242; background-color: #A3B5D9; bor
 
 #yad-form-button { border: solid 1px #808080; }
 #yad-form-button:focus { color: #ffffff; background-color: #505050; }
-#yad-form-button:focus:hover { color: #424242; background-color: #A3B5D9; }
+#yad-form-button:focus:hover { color: #424242; background-color: #a3b5d9; }
 #yad-form-button:focus:active { color: #ffffff; background-color: #2e63ba; border-color: #2e63ba; }
 
 /* Thunar */
 
 .thunar .sidebar .view:selected { color: #ffffff; background-color: #2e63ba; }
-.thunar .sidebar .view:hover { color: #1d2324; background-color: #A3B5D9; }
+
+.thunar .sidebar .view:hover { color: #1d2324; background-color: #a3b5d9; }
 
 .thunar .standard-view .view { color: #ffffff; background-color: #505050; }
 
 .thunar .standard-view .view:selected { color: #ffffff; background-color: #2e63ba; }
 
-.thunar .standard-view .view:hover { color: #1d2324; background-color: #A3B5D9; }
+.thunar .standard-view .view:hover { color: #1d2324; background-color: #a3b5d9; }
 
 .thunar .standard-view .view:selected:hover { color: #ffffff; background-color: #2e63ba; }
 
@@ -49,7 +50,7 @@ toolbar toolbutton button:hover { color: #424242; background-color: #A3B5D9; bor
 
 .thunar menubar > menuitem:hover { color: #ffffff; background-color: #2e63ba; }
 
-.thunar menuitem:hover { color: #1d2324; background-color: #A3B5D9; }
+.thunar menuitem:hover { color: #1d2324; background-color: #a3b5d9; }
 
 .thunar toolbar toolitem button box {
     color: #ffffff;
@@ -67,9 +68,9 @@ toolbar toolbutton button:hover { color: #424242; background-color: #A3B5D9; bor
 }
 
 .thunar toolbar toolbutton button:hover {
-    background-color: #A3B5D9;
+    background-color: #a3b5d9;
     color: #424242;
-    border: solid 1px #A3B5D9;
+    border: solid 1px #a3b5d9;
 }
 
 .thunar toolbar toolbutton button:active {
@@ -174,3 +175,28 @@ viewport list row:selected:hover { background-color: #2e63ba; color: #ffffff; }
 /*libreoffice*/
 
 scrolledwindow .view:hover   { color: #424242; background-color: #a3b5d9; }
+
+/*gimp*/
+
+toolpalette toolitemgroup button {
+  border: none;
+}
+
+GimpDock treeview.view:selected {
+  background-color: #a3b5d9;
+  color: #1d2324;
+}
+
+viewport GimpSpinScale {
+  color: #1d2324;
+}
+
+GimpSpinScale entry progress {
+  background-color: #a3b5d9;
+  color: #1d2324;
+}
+
+dialog scrolledwindow treeview:selected {
+  background-color: #a3b5d9;
+  color: #1d2324;
+}
