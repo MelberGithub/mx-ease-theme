@@ -141,24 +141,29 @@ scrolledwindow .view:hover   { color: #424242; background-color: #c3d5f6; }
 /*gimp*/
 
 toolpalette toolitemgroup button {
-  border: none;
+  border: solid 1px transparent;
 }
 
 GimpDock treeview.view:selected {
+  background-color: #0f56d9;
+  color: #ffffff;
+}
+
+GimpDock treeview.view:hover {
   background-color: #c3d5f6;
   color: #1d2324;
 }
 
-viewport GimpSpinScale {
+GimpDock GimpSpinScale {
   color: #1d2324;
 }
 
-GimpSpinScale entry progress {
+GimpDock GimpSpinScale entry progress {
   background-color: #c3d5f6;
-  color: #1d2324;
 }
 
 dialog scrolledwindow treeview:selected {
   background-color: #c3d5f6;
   color: #1d2324;
 }
+
