@@ -119,6 +119,9 @@ scrolledwindow button { border: 1px solid transparent; }
 box grid toolbar button { border: solid 1px transparent; }
 scrolledwindow viewport grid button { border: solid 1px transparent; }
 
+.horizontal .inkscape-toolbar .flat { border: solid 1px transparent; }
+.horizontal .inkscape-toolbar .combo { border: solid 1px transparent; }
+.horizontal .inkscape-toolbar .toggle { background-color: transparent; border: solid 1px transparent; }
 
 /*Claws Mail*/
 
@@ -176,31 +179,9 @@ viewport list row:selected:hover { background-color: #2e63ba; color: #ffffff; }
 
 scrolledwindow .view:hover   { color: #424242; background-color: #a3b5d9; }
 
-/*gimp*/
+/*bleachbit*/
 
-toolpalette toolitemgroup button {
-  border: solid 1px transparent;
-}
-
-GimpDock treeview.view:selected {
-  background-color: #2e63ba;
-  color: #ffffff;
-}
-
-GimpDock treeview.view:hover {
-  background-color: #a3b5d9;
-  color: #1d2324;
-}
-
-GimpDock GimpSpinScale {
-  color: #ffffff;
-}
-
-GimpDock GimpSpinScale entry progress {
-  background-color: #2e63ba;
-}
-
-dialog scrolledwindow treeview:selected {
-  background-color: #a3b5d9;
-  color: #1d2324;
-}
+.appmenu.popup.titlebutton.toggle { border: none; }
+.popup.toggle { border: none; }
+.titlebutton.vertical { background-color: transparent; }
+.image-button { border: none; }

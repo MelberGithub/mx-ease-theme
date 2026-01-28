@@ -1,3 +1,10 @@
+mx-ease-themes (26.01.03) mx; urgency=medium
+
+  * bleachbit and inkscape button fixes
+  * gimp theme to override default app theming
+
+ -- Melber <melber-mx-linux@gmail.com>  Wed, 28 Jan 2026 01:30:00 +0100
+
 mx-ease-themes (26.01.02) mx; urgency=medium
 
   * mx-ease and ease-dark - gtk3 gimp fixes

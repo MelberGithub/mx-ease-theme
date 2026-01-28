@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#check if local gimp gtk3 folder exists and copy themes into config
+
+name_of_logged_user=$(logname)
+
+if [ -d /home/$name_of_logged_user/.config/GIMP/3.0 ]; then
+    cp -rf /usr/share/themes/mx-ease/apps/gimp/mx-ease $HOME/.config/GIMP/3.0/themes/mx-ease
+    cp -rf /usr/share/themes/mx-ease-Dark/apps/gimp/mx-ease-Dark $HOME/.config/GIMP/3.0/themes/mx-ease-Dark
+fi
