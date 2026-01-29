@@ -1,3 +1,9 @@
+mx-ease-themes (26.01.04) mx; urgency=medium
+
+  * correct gimp.css location
+
+ -- Melber <melber-mx-linux@gmail.com>  Thu, 29 Jan 2026 23:20:00 +0100
+
 mx-ease-themes (26.01.03) mx; urgency=medium
 
   * bleachbit and inkscape fixes

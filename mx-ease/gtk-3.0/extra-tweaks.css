@@ -147,3 +147,7 @@ scrolledwindow .view:hover   { color: #424242; background-color: #c3d5f6; }
 .popup.toggle { border: none; }
 .titlebutton.vertical { background-color: transparent; }
 .image-button { border: none; }
+
+/*gimp*/
+
+.gimp-welcome-dialog .flat.link.text-button { background-color: transparent; border: none; }
