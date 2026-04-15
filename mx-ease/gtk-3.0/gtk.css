@@ -4299,7 +4299,7 @@ infobar.info > revealer > box, infobar.info:hover > revealer > box, infobar.info
 }
 
 infobar.info > revealer > box button, infobar.info > revealer > box button.text-button:not(:disabled), infobar.info:hover > revealer > box button, infobar.info:hover > revealer > box button.text-button:not(:disabled), infobar.info:backdrop > revealer > box button, infobar.info:backdrop > revealer > box button.text-button:not(:disabled) {
-  color: #0f56d9;
+  color: #1d2324;
 }
 
 infobar.action > revealer > box, infobar.action:backdrop > revealer > box, infobar.question > revealer > box, infobar.question:backdrop > revealer > box {
@@ -8750,7 +8750,7 @@ text color for entries, views and content in general on backdrop windows */
 @define-color theme_unfocused_text_color #cacdd0;
 /*
 widget base background color on backdrop windows */
-@define-color theme_unfocused_bg_color #424242;
+@define-color theme_unfocused_bg_color #dfdfdd;
 /*
 text widgets and the like base background color on backdrop windows */
 @define-color theme_unfocused_base_color #f5f5f5;
@@ -8781,7 +8781,6 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_unfocused_title rgba(255, 255, 255, 0.7);
 @define-color wm_highlight rgba(255, 255, 255, 0.1);
 @define-color wm_bg #1d2324;
-@define-color wm_unfocused_bg #3c3c3c;
 @define-color wm_unfocused_bg #3c3c3c;
 @define-color wm_button_close_hover_bg #E57373;
 @define-color wm_button_close_active_bg #E53935;

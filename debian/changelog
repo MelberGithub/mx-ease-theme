@@ -1,3 +1,9 @@
+mx-ease-themes (26.04.01) mx; urgency=medium
+
+  * mx-ease and ease-dark - gtk3 thunar fixes
+
+ -- Melber <melber-mx-linux@gmail.com>  Wed, 15 Apr 2026 23:45:00 +0100
+ 
 mx-ease-themes (26.01.04) mx; urgency=medium
 
   * correct gimp.css location
