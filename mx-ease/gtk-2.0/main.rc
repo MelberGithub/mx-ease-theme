@@ -1981,9 +1981,11 @@ style "button_label" {
 }
 
 style "normal_button_label" {
-    fg[NORMAL] = @selected_fg_color
-    #fg[ACTIVE] = @selected_fg_color
-    #fg[PRELIGHT] = @selected_bg_color
+    fg[NORMAL] = @text_color
+    fg[ACTIVE] = @text_color
+    #text[NORMAL] = @text_color
+    #text[ACTIVE] = @text_color
+    #fg[PRELIGHT] = @text_color
 }
 
 style "button" {
@@ -2314,10 +2316,10 @@ style "notebook" {
 
 ## HERE
 style "notebook_tab_label" {
-  fg[ACTIVE] = @selected_fg_color
-    fg[NORMAL] = @selected_fg_color
-    text[NORMAL] = @selected_fg_color
-  font_name = "Medium"
+  fg[ACTIVE] = @text_color
+  fg[NORMAL] = @text_color
+  text[ACTIVE] = @text_color
+  text[NORMAL] = @text_color
 }
 
 style "notebook_viewport" {

@@ -151,3 +151,13 @@ scrolledwindow .view:hover   { color: #424242; background-color: #c3d5f6; }
 /*gimp*/
 
 .gimp-welcome-dialog .flat.link.text-button { background-color: transparent; border: none; }
+
+
+/*fixes 260419?*/
+.thunar .standard-view .view:focus { color: #1d2324; background-color: #ffffff; }
+.thunar .standard-view .view:focus:selected { color: #ffffff; background-color: #0f56d9; }
+
+.background scrolledwindow treeview.view:focus { color: #1d2324; }
+.background scrolledwindow treeview.view:selected { color: #ffffff; background-color: #0f56d9; }
+.background scrolledwindow treeview.view:selected:hover { color: #ffffff; background-color: #0f56d9; }
+.background scrolledwindow treeview.view:hover { color: #424242; background-color: #c3d5f6; }
