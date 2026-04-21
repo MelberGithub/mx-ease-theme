@@ -142,10 +142,10 @@ flowbox rubberband {
   background-color: alpha(#2e63ba, 0.35);
 }
 
-flowbox flowboxchild {
+/*flowbox flowboxchild {
   padding: 6px;
   border-radius: 2px;
-}
+}*/
 
 flowbox flowboxchild label.version-label {
   background-clip: border-box;

@@ -144,10 +144,10 @@ flowbox rubberband {
   background-color: alpha(#0f56d9, 0.35);
 }
 
-flowbox flowboxchild {
+/*flowbox flowboxchild {
   padding: 6px;
   border-radius: 2px;
-}
+}*/
 
 flowbox flowboxchild:selected {
   color: #ffffff;
