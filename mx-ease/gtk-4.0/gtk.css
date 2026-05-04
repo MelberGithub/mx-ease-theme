@@ -268,7 +268,7 @@ entry:drop(active) {
 spinbutton.vertical:focus-within, spinbutton:focus-within:not(.vertical),
 entry:focus-within {
   background-color: #f5f5f5;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.38);
+/*  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.38); */
   border-color: #424242;
   outline: none;
 }
@@ -1859,7 +1859,7 @@ headerbar.selection-mode .selection-menu {
 }
 
 headerbar.selection-mode .selection-menu arrow {
-  -GtkArrow-arrow-scaling: 1;
+  -gtk-icon-size: 16px;  /*-GtkArrow-arrow-scaling: 1;*/
 }
 
 headerbar.selection-mode .selection-menu .arrow {
@@ -2019,7 +2019,8 @@ headerbar.default-decoration {
   border-top: 3px solid #1d2324;
 }
 
-headerbar windowcontrols:inactive > image {
+/*headerbar windowcontrols:inactive > image {*/
+windowcontrols > button:backdrop {
   background-color: #424242;
   color: #cacdd0;
 }
@@ -6101,7 +6102,8 @@ splitbutton.suggested-action > button:checked.keyboard-activating, splitbutton.s
 }
 
 button.opaque {
-  background-color: gtkmix(#FFFFFF, rgba(0, 0, 0, 0.87), 85%);
+/*  background-color: gtkmix(#FFFFFF, rgba(0, 0, 0, 0.87), 85%); */
+  background-color: color-mix(in srgb, #FFFFFF 85%, #000000 85%);
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -6196,8 +6198,9 @@ menubutton.destructive-action {
 }
 
 menubutton.opaque {
-  background-color: gtkmix(#FFFFFF, rgba(0, 0, 0, 0.87), 85%);
-  color: rgba(0, 0, 0, 0.87);
+  /*background-color: gtkmix(#FFFFFF, rgba(0, 0, 0, 0.87), 85%);*/
+  background-color: color-mix(in srgb, #FFFFFF 85%, #000000 85%);
+    color: rgba(0, 0, 0, 0.87);
 }
 
 menubutton.suggested-action, menubutton.destructive-action, menubutton.opaque {
@@ -6321,7 +6324,8 @@ splitbutton.destructive-action {
 }
 
 splitbutton.opaque {
-  background-color: gtkmix(#FFFFFF, rgba(0, 0, 0, 0.87), 85%);
+  /*background-color: gtkmix(#FFFFFF, rgba(0, 0, 0, 0.87), 85%);*/
+  background-color: color-mix(in srgb, #FFFFFF 85%, #000000 85%);
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -6409,8 +6413,9 @@ statuspage > scrolledwindow > viewport > box > clamp > box > .icon:not(:last-chi
 }
 
 statuspage.compact > scrolledwindow > viewport > box {
-  margin: 24px 6px 8 2;
-  border-spacing: 24px;
+/*  margin: 24px 6px 8 2;
+  border-spacing: 24px; */
+  margin: 24px 6px 8px 2px;
 }
 
 statuspage.compact > scrolledwindow > viewport > box > clamp > box > .icon {
@@ -6957,12 +6962,14 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .sidebar-pane banner > revealer > widget {
-  background-color: gtkmix(#0f56d9, #FAFAFA, 30%);
+  /*background-color: gtkmix(#0f56d9, #FAFAFA, 30%);*/
+  background-color: color-mix(in srgb, #0f56d9, #fafafa 30%);
   color: rgba(0, 0, 0, 0.87);
 }
 
 .sidebar-pane banner > revealer > widget:backdrop {
-  background-color: gtkmix(#0f56d9, #FAFAFA, 30%);
+  /*background-color: gtkmix(#0f56d9, #FAFAFA, 30%);*/
+  background-color: color-mix(in srgb, #0f56d9, #fafafa 30%);
 }
 
 .sidebar-pane:dir(ltr), .sidebar-pane:dir(ltr) banner > revealer > widget, .sidebar-pane.end:dir(rtl), .sidebar-pane.end:dir(rtl) banner > revealer > widget {
@@ -7116,13 +7123,15 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 
 .content-pane .sidebar-pane banner > revealer > widget,
 .sidebar-pane .content-pane banner > revealer > widget {
-  background-color: gtkmix(#0f56d9, #FFFFFF, 30%);
-  color: rgba(0, 0, 0, 0.87);
+ /*background-color: gtkmix(#0f56d9, #FFFFFF, 30%);*/
+  background-color: color-mix(in srgb, #0f56d9, #ffffff 30%);
+  color: #1d2324;
 }
 
 .content-pane .sidebar-pane banner > revealer > widget:backdrop,
 .sidebar-pane .content-pane banner > revealer > widget:backdrop {
-  background-color: gtkmix(#0f56d9, #FFFFFF, 30%);
+ /*background-color: gtkmix(#0f56d9, #FFFFFF, 30%);*/
+  background-color: color-mix(in srgb, #0f56d9, #ffffff 30%);
 }
 
 .content-pane .sidebar-pane:dir(ltr), .content-pane .sidebar-pane:dir(ltr) banner > revealer > widget, .content-pane .sidebar-pane.end:dir(rtl), .content-pane .sidebar-pane.end:dir(rtl) banner > revealer > widget,
