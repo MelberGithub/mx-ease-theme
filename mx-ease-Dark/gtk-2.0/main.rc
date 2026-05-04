@@ -1062,7 +1062,7 @@ style "default" {
       state       = NORMAL
       detail      = "slider"
       file        = "assets/scrollbar-horz-slider.png"
-      border      = {8, 8, 9, 8 }
+      border      = {8, 8, 8, 8 }
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1072,7 +1072,7 @@ style "default" {
       state       = PRELIGHT
       detail      = "slider"
       file        = "assets/scrollbar-horz-slider-hover.png"
-      border      = {8, 8, 9, 8 }
+      border      = {8, 8, 8, 8 }
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1082,7 +1082,7 @@ style "default" {
       state       = ACTIVE
       detail      = "slider"
       file        = "assets/scrollbar-horz-slider-active.png"
-      border      = {8, 8, 9, 8 }
+      border      = {8, 8, 8, 8 }
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1092,7 +1092,7 @@ style "default" {
       state       = INSENSITIVE
       detail      = "slider"
       file        = "assets/scrollbar-horz-slider-disabled.png"
-      border      = {8, 8, 9, 8 }
+      border      = {8, 8, 8, 8 }
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1104,7 +1104,7 @@ style "default" {
       state       = NORMAL
       detail      = "slider"
       file        = "assets/scrollbar-vert-ltr-slider.png"
-      border      = {9, 8, 8, 8}
+      border      = {8, 8, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = LTR
@@ -1115,7 +1115,7 @@ style "default" {
       state       = PRELIGHT
       detail      = "slider"
       file        = "assets/scrollbar-vert-ltr-slider-hover.png"
-      border      = {9, 8, 8, 8}
+      border      = {8, 8, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = LTR
@@ -1126,7 +1126,7 @@ style "default" {
       state       = ACTIVE
       detail      = "slider"
       file        = "assets/scrollbar-vert-ltr-slider-active.png"
-      border      = {9, 8, 8, 8}
+      border      = {8, 8, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = LTR
@@ -1137,7 +1137,7 @@ style "default" {
       state       = INSENSITIVE
       detail      = "slider"
       file        = "assets/scrollbar-vert-ltr-slider-disabled.png"
-      border      = {9, 8, 8, 8}
+      border      = {8, 8, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = LTR
@@ -1150,7 +1150,7 @@ style "default" {
       state       = NORMAL
       detail      = "slider"
       file        = "assets/scrollbar-vert-rtl-slider.png"
-      border      = {8, 9, 8, 8}
+      border      = {8, 8, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = RTL
@@ -1161,7 +1161,7 @@ style "default" {
       state       = PRELIGHT
       detail      = "slider"
       file        = "assets/scrollbar-vert-rtl-slider-hover.png"
-      border      = {8, 9, 8, 8}
+      border      = {8, 8, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = RTL
@@ -1172,7 +1172,7 @@ style "default" {
       state       = ACTIVE
       detail      = "slider"
       file        = "assets/scrollbar-vert-rtl-slider-active.png"
-      border      = {8, 9, 8, 8}
+      border      = {8, 8, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = RTL
@@ -1183,7 +1183,7 @@ style "default" {
       state       = INSENSITIVE
       detail      = "slider"
       file        = "assets/scrollbar-vert-rtl-slider-disabled.png"
-      border      = {8, 9, 8, 8}
+      border      = {8, 8, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = RTL
