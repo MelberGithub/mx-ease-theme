@@ -8712,15 +8712,17 @@ window.background.csd.thunar scrolledwindow.frame.sidebar.shortcuts-pane treevie
   color: #ececee;
 }
 
+#whiskermenu-window .title-area button { border: none; }
+
 #whiskermenu-window entry.search {
   background-color: #505050;
-  border: solid 2px #2e63ba;
+  border: solid 1px #424242;
 }
 
 #whiskermenu-window entry.search:focus {
   background-color: #505050;
   color: #ffffff;
-  border: solid 2px #2e63ba;
+  border: solid 1px #2e63ba;
 }
 
 #whiskermenu-window .categories {

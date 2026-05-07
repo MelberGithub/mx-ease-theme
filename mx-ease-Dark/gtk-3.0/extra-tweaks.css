@@ -189,3 +189,6 @@ scrolledwindow .view:hover   { color: #424242; background-color: #a3b5d9; }
 /*gimp*/
 
 .gimp-welcome-dialog .flat.link.text-button { background-color: transparent; border: none; }
+
+/*geany*/
+.flat.image-button.text-button { border: none; }

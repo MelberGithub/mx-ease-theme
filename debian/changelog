@@ -1,3 +1,11 @@
+mx-ease-themes (26.05.01) mx; urgency=medium
+
+  * mx-ease and ease-dark - gtk2 scrollbar slider fixes
+  * mx-ease-dark - gtk3 fixes whisker menu
+  * mx-ease and ease-dark - gtk4 fixes  
+
+ -- Melber <melber-mx-linux@gmail.com>  Thu, 07 May 2026 23:00:00 +0100
+
 mx-ease-themes (26.04.04) mx; urgency=medium
 
   * mx-ease-dark - gtk3 fix typo
