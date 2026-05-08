@@ -191,4 +191,6 @@ scrolledwindow .view:hover   { color: #424242; background-color: #a3b5d9; }
 .gimp-welcome-dialog .flat.link.text-button { background-color: transparent; border: none; }
 
 /*geany*/
-.flat.image-button.text-button { border: none; }
+#GeanyToolbar toolbutton .flat.image-button { border: solid 1px transparent; border-radius: 0; }
+#GeanyToolbar toolbutton .flat.image-button:hover { border: solid 1px #a3b5d9; border-radius: 0; }
+#GeanyToolbar toolbutton .flat.image-button:active { border: solid 1px #2e63ba; border-radius: 0; }

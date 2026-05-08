@@ -162,3 +162,9 @@ scrolledwindow .view:hover   { color: #424242; background-color: #c3d5f6; }
 .background scrolledwindow treeview.view:selected { color: #ffffff; background-color: #0f56d9; }
 .background scrolledwindow treeview.view:selected:hover { color: #ffffff; background-color: #0f56d9; }
 .background scrolledwindow treeview.view:hover { color: #424242; background-color: #c3d5f6; }
+
+
+/*geany*/
+#GeanyToolbar toolbutton .flat.image-button { border: solid 1px transparent; border-radius: 0; }
+#GeanyToolbar toolbutton .flat.image-button:hover { border: solid 1px #c3d5f6; border-radius: 0; }
+#GeanyToolbar toolbutton .flat.image-button:active { border: solid 1px #0f56d9; border-radius: 0; }
