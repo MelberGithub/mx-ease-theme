@@ -8606,6 +8606,23 @@ window.background.csd.thunar scrolledwindow.frame.sidebar.shortcuts-pane treevie
   background-color: #3C3C3C;
 }
 
+/*fixes 26.05.02*/
+#login_window box button.text-button { color: #ffffff; background-color: #505050; }
+#login_window box button.text-button:hover { color: #424242; background-color: #a3b5d9; }
+#login_window box button.text-button:active { color: #ffffff; background-color: #2e63ba; }
+#login_window box button.text-button:focus { color: #ffffff; background-color: #2e63ba; }
+
+#shutdown_dialog box button.text-button { color: #ffffff; background-color: #505050; }
+#shutdown_dialog box button.text-button:hover { color: #424242; background-color: #a3b5d9; }
+#shutdown_dialog box button.text-button:active { color: #ffffff; background-color: #2e63ba; }
+#shutdown_dialog box button.text-button:focus { color: #ffffff; background-color: #2e63ba; }
+
+#restart_dialog box button.text-button { color: #ffffff; background-color: #505050; }
+#restart_dialog box button.text-button:hover { color: #424242; background-color: #a3b5d9; }
+#restart_dialog box button.text-button:active { color: #ffffff; background-color: #2e63ba; }
+#restart_dialog box button.text-button:focus { color: #ffffff; background-color: #2e63ba; }
+
+
 #content_frame {
   padding-bottom: 16px;
 }
